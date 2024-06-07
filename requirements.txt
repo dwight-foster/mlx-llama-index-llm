@@ -1,0 +1,4 @@
+mlx>=0.15.0
+transformers>=4.41.2
+llama-index>=0.10.0
+mlx-lm>=0.11.0
