@@ -22,14 +22,14 @@ pip install -r requirements.txt
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from mlx_lm import load, generate, convert
-from base import MLXLLM
+from mlx_llm import MLXLLM
 documents = SimpleDirectoryReader("data").load_data()
 
 # bge embedding model
 Settings.embed_model = HuggingFaceEmbedding(
     model_name="BAAI/bge-small-en-v1.5"
 )
-model, tokenizer = load("mlx_model_quantized")
+model, tokenizer = load("mlx-community/Meta-Llama-3-8B-8bit")
 llm = MLXLLM(model=model, tokenizer=tokenizer)
 # ollama
 Settings.llm = llm
