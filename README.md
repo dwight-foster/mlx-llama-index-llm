@@ -1,6 +1,6 @@
 # MLX LLama-Index LLM
 
-MLX LLama-Index LLM is a llama-index LLM integration for the [MLX](https://github.com/ml-explore/mlx) machine learning framework. It can be used the same as other [llama-index](https://github.com/run-llama/llama_index) llms to work seamlessy with tools such as RAG.
+MLX Llama-Index LLM is a llama-index LLM integration for the [MLX](https://github.com/ml-explore/mlx) machine learning framework. It can be used the same as other [llama-index](https://github.com/run-llama/llama_index) llms to work seamlessy with tools such as RAG.
 
 ## Features
 
